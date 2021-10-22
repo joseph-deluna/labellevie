@@ -28,7 +28,6 @@
         </div>
 
         <section id="heading">
-        
             <figure>
                 <figcaption class="heading-desc">
                     <h1><i>Shop Luxury. Build with confidence</i></h1>
@@ -110,6 +109,7 @@
             </div>
         </section>
         
+        
         <section class="sanyc-video">
             <div class="sanyc-desc">
             <h1>We are Sanycces distributors</h1>
@@ -118,7 +118,7 @@
             </p>
         </div>
             <iframe width="700" height="400"
-            src="https://www.youtube.com/embed/a-Bu3NpxvXo?loop=1">
+            src="https://www.youtube.com/embed/IIu8Q2iqP0o?loop=1">
             </iframe> 
         </section>
 
@@ -171,20 +171,18 @@
                 <div class="column">
                     <div class="column-2 bg-light">
                         <h2>Say Hello</h2>
-                        <form action="" class="callback-form">
+                        <form action="sendmail.php" method="POST" class="callback-form">
                             <div class="form-control">
                                 <label for="name"></label>
                                 <input type="text" name="name" id="name" placeholder="Enter name">
                             </div>
                             <div class="form-control">
                                 <label for="email"></label>
-                                <input type="text" name="emai" id="email" placeholder="Enter email">
+                                <input type="text" name="email" id="email" placeholder="Enter email">
                             </div>
                             <div class="form-control">
-                                <div class="field">
                                     <label for="message">
-                                    <textarea name="message" id="message" rows="4" placeholder="Your message"></textarea>
-                                </div>
+                                    <textarea name="message" id="message" rows="6" placeholder="Your message"></textarea>
                             </div>
                             <input class="btn" type="submit" value="Send" id="submit">
                         </form>
@@ -222,7 +220,7 @@
             }
         }
         // Smooth Scrolling
-        $('#navbar a, .btn').on('click', function (e) {
+        $('#navbar a').on('click', function (e) {
             if (this.hash !== '') {
                 e.preventDefault();
 

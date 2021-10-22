@@ -280,7 +280,30 @@ a {
         flex: 100%;
         max-width: 100%;
     }
-
+    .sanyc-video {
+        display: flex;
+        flex-direction: column;
+        padding: 1;
+        align-items: center;
+    }
+    .sanyc-desc{
+        width: 100%;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-description {
+        width: 100% !important;
+        font-size: smaller !important;
+    }
+    .about-container{
+        margin: 100px 80px !important;
+    }
+    #about img {
+        width: 300px !important;
+    }
 }
 
 /* Callback form */
@@ -361,8 +384,6 @@ a {
 
 .about-container {
     margin: 80px 100px;
-    box-shadow: 0 0 60px black;
-    background: #493657;
     animation: transitionIn 1s;
 }
 
@@ -374,7 +395,7 @@ a {
 
 .about-description {
     line-height: 2.5;
-    color: #fff;
+    color: #493657;;
     font-size: 1.3rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -386,17 +407,16 @@ a {
     margin-right: 2rem;
 }
 
-
-
-.about-1 img {
-    width: 100px;
-    height: auto;
-}
-
 .about-description h1 {
     text-align: center;
     padding-bottom: 1rem;
     font-family: 'Raleway', sans-serif;
+}
+
+.about-description {
+    margin: 50px 40px;
+    line-height: 1.5;
+    width: 53%;
 }
 
 .about-figure {
@@ -432,12 +452,6 @@ a {
 
 
 
-
-.about-description {
-    margin: 50px 40px;
-    line-height: 1.5;
-    width: 53%;
-}
 
 #about .about-description img {
     width: 150px; 
@@ -477,11 +491,12 @@ a {
 }
 
 #projects .project-set {
-    display: grid;
+    display: flex;
     grid-gap: 0.5rem;
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 50px;
-    
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #projects .project-set img {

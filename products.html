@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 </head>
 <style>
   body {
-    background-color: #e5e5f7;
+background-color: #e5e5f7;
 opacity: 0.9;
 background-size: 10px 10px;
 background-image: repeating-linear-gradient(45deg, #b3b4da 0, #b3b4da 1px, #e5e5f7 0, #e5e5f7 50%);
@@ -31,13 +31,22 @@ background-image: repeating-linear-gradient(45deg, #b3b4da 0, #b3b4da 1px, #e5e5
 </div>
 <section id="bath-tub">
 <div class="container">
-  <div class="categories-container">
+  <div id="content-desktop" class="categories-container">
     <ul>
-      <h3>Categories</h3>
+      <h3>Our Collections</h3>
       <li><a href="#"><i class="fas fa-archway"></i> Lights</a></li>
-      <li><a href="#"><i class="fas fa-square-full"></i> Flooring</a></li>
-      <li><a href="#"><i class="fas fa-bath"></i> Bath</a></li>
+      <li><a href="floorings.html"><i class="fas fa-square-full"></i> Flooring</a></li>
+      <li><a style="font-size: 1.3rem; color: #C9D8B6;" href="#"><i class="fas fa-bath"></i> Bath</a></li>
       <li><a href="#"><i class="fas fa-couch"></i> Furniture</a></li>
+    </ul>
+   </div>
+
+   <div id="content-mobile" class="categories-container">
+    <ul>
+      <li><a href="#"><i class="fas fa-archway"></i> </a></li>
+      <li><a href="floorings.html"><i class="fas fa-square-full"></i> </a></li>
+      <li><a style="font-size: 1.3rem; color: #C9D8B6;" href="#"><i class="fas fa-bath"></i></a></li>
+      <li><a href="#"><i class="fas fa-couch"></i> </a></li>
     </ul>
    </div>
 
@@ -99,7 +108,6 @@ background-image: repeating-linear-gradient(45deg, #b3b4da 0, #b3b4da 1px, #e5e5
 
 
 </div>
-  
         
 </body>
 </html>
